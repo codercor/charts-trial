@@ -1,7 +1,7 @@
 import { useState, useCallback } from 'react'
 import { v4 } from 'uuid'
 import { AnimatePresence, motion } from 'framer-motion'
-import { FaPlay as IconPlay, FaPause as IconPause, FaStop as IconStop, FaRedo as IconReset } from 'react-icons/fa'
+import { FaPlay as IconPlay, FaPause as IconPause, FaRedo as IconReset } from 'react-icons/fa'
 
 import Chart from './Chart/Chart'
 import { ItemType } from './Chart/type'

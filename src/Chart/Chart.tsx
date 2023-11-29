@@ -1,5 +1,5 @@
 import { useRef, useMemo } from 'react'
-import { AnimatePresence, motion, useMotionValue } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 
 import ItemChart from './ItemChart';
 
@@ -59,7 +59,7 @@ const Chart = ({
                         }}
                         dragConstraints={dragConstraints} className="flex h-full items-end relative align-bottom max-w-full gap-1 basis-full">
                         <AnimatePresence>
-                            {data.length ? data.map((d, i) => (
+                            {data.length ? data.map((d) => (
                                 <ItemChart
                                     key={d.id} {...d} />
                             )) : <div className="flex items-center justify-center wh-full"> No data </div>}
