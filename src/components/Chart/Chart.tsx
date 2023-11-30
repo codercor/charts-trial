@@ -30,8 +30,10 @@ const Chart = ({
         }
     }, [data.length, ref?.current?.scrollWidth, ref?.current?.offsetWidth])
 
+    // motion value to move the chart
     const x = useMotionValue(0)
 
+    // scroll to the end of the chart when the data length changes
     useEffect(() => {
         data.length > 5 && x.set(-(data.length - 3) * 52)
         data.length == 0 && x.set(0)
