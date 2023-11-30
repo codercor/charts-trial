@@ -85,14 +85,14 @@ function App() {
   return (
     <div className="flex relative flex-col items-center gap-8 justify-center">
 
-      <div className="flex sticky w-full border-2 top-0 bg-white z-[1] items-center justify-center gap-4">
+      <div className="flex sticky px-2 w-full border-2 top-0 bg-white z-[1] items-center justify-center gap-4">
         <AnimatePresence>
           {generatorInterval && <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            <p> Seconds : {timer} </p>
+            <p className='font-bold'> {timer} s </p>
           </motion.div>}
         </AnimatePresence>
 
