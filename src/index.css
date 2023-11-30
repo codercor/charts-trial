@@ -5,7 +5,7 @@
 
 @layer components {
     .controls {
-        @apply w-24 h-12 shadow-xl rounded-lg text-white border-2 uppercase tracking-widest font-extrabold hover:scale-95 transition-all disabled:hover:!scale-100 flex items-center justify-center gap-4
+        @apply md:w-24 w-12 h-12 px-4 shadow-xl rounded-lg text-white border-2 uppercase tracking-widest font-extrabold hover:scale-95 transition-all disabled:hover:!scale-100 flex items-center justify-center gap-4
     }
 
     .disabled {

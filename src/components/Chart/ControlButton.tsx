@@ -21,7 +21,7 @@ const ControlButton = ({ children, onClick, disabled, bgClass, icon }: ControlBu
             })}
         >
             {icon}
-            {children}
+            <span className='hidden md:block'> {children}</span>
         </motion.button>
     )
 }
