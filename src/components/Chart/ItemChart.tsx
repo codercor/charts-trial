@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 
 import { ItemType } from './type'
 const ItemChart = function ItemChart({ value }: ItemType) {
-
     //get color from value
     const getRGB = useCallback((value: number) => {
         const red = Math.round((value / 10) * 240) - 150
@@ -27,4 +26,4 @@ const ItemChart = function ItemChart({ value }: ItemType) {
     </motion.div>
 }
 
-export default motion(ItemChart);
+export default ItemChart;

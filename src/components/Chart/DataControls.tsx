@@ -2,13 +2,13 @@ import { useCallback } from 'react'
 import { motion } from 'framer-motion'
 import { FaSave as IconSave, FaUpload as IconUpload } from 'react-icons/fa'
 
-import { uploadFile } from '../util'
+import { uploadFile } from '../../util'
 
 import { ItemType } from './type'
 
 type DataActionsProps = {
     data: ItemType[],
-    setData: React.Dispatch<React.SetStateAction<ItemType[]>>
+    setData: (data: ItemType[]) => void
 }
 
 const DataActions = ({ data, setData }: DataActionsProps) => {

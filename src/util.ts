@@ -1,4 +1,4 @@
-import { ItemType } from "./Chart/type";
+import { ItemType } from "./components/Chart/type";
 
 export const uploadFile = (file: File | undefined,cb: (data:ItemType[])=>void)=>{
     if (!file) return;
